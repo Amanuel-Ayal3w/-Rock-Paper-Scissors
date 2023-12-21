@@ -1,0 +1,20 @@
+/* Centering styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:black;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 40px;
+}
