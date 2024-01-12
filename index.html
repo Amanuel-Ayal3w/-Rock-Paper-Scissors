@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
-    <link  rel = "stylesheet" href ="style.css">
+    <script src="script.js" defer></script>
+    <link  rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <P> Rock Paper Scissors </P>
-    <div id="myModal" class="modal"></div>
+    <p class="text"> ROCK PAPER SCISSORS</p>
+
+    <div class="container">
+        <img class="img" src="pics/rock.webp" alt="">
+        <img class="img" src="pics/paper.webp" alt="">
+        <img class="img" src="pics/scissor.webp" alt="">
+    </div>
+
+    <div class="btn-container">
+        <button id="BtnRock" onclick="playGame('rock')">rock</button>
+        <button id="BtnPaper" onclick="playGame('paper')">paper</button>
+        <button id="BtnScissor" onclick="playGame('scissor')">scissors</button><br>
+      
+    </div>
+<div class = "result">
+    <div id="player_score">Player  </div>
+    <div id="Computer_score">Computer  </div>
+</div>
+<div id="overall_result"> Result </div>
+<button onclick="resetGame()">Play Again</button>
 </body>
 </html>
