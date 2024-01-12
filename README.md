@@ -1,4 +1,4 @@
 # -Rock-Paper-Scissors
 
-first version of rock paper scissors usig just javascrip tin the console.
+A rock Paper Scissors Game Using javascript 
 
