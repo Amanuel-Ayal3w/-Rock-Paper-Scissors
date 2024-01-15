@@ -14,6 +14,7 @@ function playGame(playerChoice) {
 
         if (playerChoice === computerChoice) {
             result = "It's a tie!";
+            
         } else if (
             (playerChoice === "rock" && computerChoice === "scissors") ||
             (playerChoice === "paper" && computerChoice === "rock") ||
@@ -35,11 +36,11 @@ function playGame(playerChoice) {
         if (roundsPlayed === 5) {
             // Determine overall winner and display it
             if (playerScore > computerScore) {
-                overallResultElement.textContent = " Final Winner: Player!";
+                overallResultElement.textContent = " You Win:  play Agian";
             } else if (playerScore < computerScore) {
-                overallResultElement.textContent = " Final Winner: Computer!";
+                overallResultElement.textContent = " You Loose: play Agian";
             } else {
-                overallResultElement.textContent = "Final result: It's a tie!";
+                overallResultElement.textContent = " It's a tie! play Agian";
             }
         }
     }
@@ -54,7 +55,4 @@ function resetGame() {
     playerScoreElement.textContent = "Player: 0";
     computerScoreElement.textContent = "Computer: 0";
     overallResultElement.textContent = "";
-
-    // Hide the "Play Again" button
-    document.getElementById("play_again_button").style.display = "none";
 }

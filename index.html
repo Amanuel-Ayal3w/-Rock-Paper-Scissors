@@ -8,6 +8,7 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <div class = "container_all">
     <p class="text"> ROCK PAPER SCISSORS</p>
 
     <div class="container">
@@ -22,11 +23,13 @@
         <button id="BtnScissor" onclick="playGame('scissor')">scissors</button><br>
       
     </div>
-<div class = "result">
-    <div id="player_score">Player  </div>
-    <div id="Computer_score">Computer  </div>
-</div>
+    <div class = "result">
+    <div id="player_score">Player:  </div>
+    <div id="Computer_score">Computer:  </div>
+    </div>
+
 <div id="overall_result"> Result </div>
-<button onclick="resetGame()">Play Again</button>
+<button id="btn"  onclick="resetGame()">Play Again</button>
+</div>
 </body>
 </html>

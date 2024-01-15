@@ -1,61 +1,71 @@
-/* Centering styles for the modal */
 
 body{
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.container_all{
+    margin-top:130px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    margin-top: 100px;
-    background-color: rgb(51, 50, 50);
-   
+    background: rgba(255, 255, 255, 0.199);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 40px 40px;
+    
+
 }
 
-    
 
 .text{
     padding: 15px 30px;
-    background-color: hsl(157, 100%, 60%);
-    border-radius: 4px;
+    background-color: hsl(157, 70%, 26%);
+    border-radius: 12px;
     font-size: 30px;
-    color:black;
+    color:rgb(255, 255, 255);
     margin-bottom: 50px;
 }
 .text-2{
     margin-top: 50px;
     font-size: 25px;
     color: hsl(157, 100%, 60%);
+
 }
-.contianer{
+.container{
     margin-top: 30px;
     display: flex;
+    gap:23px;
 }
 
 
 .btn-container{
-
+    margin-left:21px;
+    display: flex;
     margin-top: 30px;
-   width:100%;
+    width:100%;
+    gap:23px;
+    align-items: center;
+    justify-content: center;
 }
 button {
-    display: flex;
-    gap: 20px;
+  
     padding-top: 30 px;
     background-color:#ffffff;
     color: #000000;
     padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
     border: none;
-
-    
+ 
 }
 button:hover {
     background-color:hsl(157, 100%, 60%);
@@ -63,9 +73,8 @@ button:hover {
     animation: jump 1s infinite; 
 }
 .img{
-
     max-width: 100px;
-    border-radius: 5px;
+    border-radius: 100px;
     gap: 3px;
 }
 @keyframes jump {
@@ -86,21 +95,29 @@ button:hover {
 .img:hover {
     animation: jump 1.5s infinite; 
 }
-
-#player_score ,#Computer_score,#overall_result
+#overall_result
 {
     
-    color:rgb(10, 0, 0);
+    color:rgb(255, 255, 255);
     font-size: 24px;
     margin:30px;
-    background-color:hsl(157, 100%, 60%);
-    padding : 15px 30px;
-    border-radius: 10px;
-    min-width: 70px;
+   
+   
 }
 .result{
     display: flex;
     margin-top: 50px;
+    gap:15px;
+    color:white;
   
+}
+
+#btn{
+    background-color:hsl(157, 100%, 60%);
+}
+#btn:hover {
+    background-color:hsl(0, 0%, 100%);
+    color: rgb(0, 0, 0);
+    animation: jump 1s infinite; 
     
 }
